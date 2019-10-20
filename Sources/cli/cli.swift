@@ -594,27 +594,27 @@ public enum TerminalColor: UInt8 {
 }
     
 // Alert functions.
-public func AlertSuccess(text: String = "Success") -> String {
+public func AlertSuccess(_ text: String = "Success") -> String {
     let alert = Symbols.tick.green() + " " + text
     return alert
 }
 
-public func AlertFailure(text: String = "Failure") -> String {
+public func AlertFailure(_ text: String = "Failure") -> String {
     let alert = Symbols.cross.red() + " " + text
     return alert
 }
 
-public func AlertInfo(text: String = "Info") -> String {
+public func AlertInfo(_ text: String = "Info") -> String {
     let alert = Symbols.info + " " + text
     return alert
 }
 
-public func AlertWarning(text: String = "Warning") -> String {
+public func AlertWarning(_ text: String = "Warning") -> String {
     let alert = "!".bold().red() + " " + text
     return alert
 }
 
-public func AlertGeneric(text: String = "Generic") -> String {
+public func AlertGeneric(_ text: String = "Generic") -> String {
     let alert = Symbols.arrow_right + " " + text
     return alert
 }

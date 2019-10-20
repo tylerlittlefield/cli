@@ -9,11 +9,11 @@ A hobby project I'm working on to learn swift. Takes the source code from
 [cli](https://github.com/r-lib/cli). The goal is to provide things like:
 
 ```
-print(AlertSuccess(text: "Updated database."))
-print(AlertInfo(text: "Reopened database."))
-print(AlertWarning(text: "Cannot reach GitHub, using local database cache."))
-print(AlertFailure(text: "Failed to connect to database."))
-print(AlertGeneric(text: "A generic alert."))
+print(AlertSuccess("Updated database."))
+print(AlertInfo("Reopened database."))
+print(AlertWarning("Cannot reach GitHub, using local database cache."))
+print(AlertFailure("Failed to connect to database."))
+print(AlertGeneric("A generic alert."))
 ```
 
 ## Example
