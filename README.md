@@ -5,7 +5,7 @@
 <!-- badges: end -->
 
 A hobby project I'm working on to learn swift. The idea is to create a package similar to the 
-#rstats package ![cli](https://github.com/r-lib/cli).
+#rstats package [cli](https://github.com/r-lib/cli).
 
 ## Example
 
