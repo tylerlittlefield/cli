@@ -4,10 +4,9 @@
 [![Travis build status](https://travis-ci.org/tylurp/cli.svg?branch=master)](https://travis-ci.org/tylurp/cli)
 <!-- badges: end -->
 
-A hobby project I'm working on to learn swift. The idea is to create a package similar to the 
-[cli](https://github.com/r-lib/cli) from the R community. I'm using all the code from 
-[ColorizeSwift](https://github.com/mtynior/ColorizeSwift) to get text styles and wrapping 
-useful CLI interfaces from [cli](https://github.com/r-lib/cli). This lets you do something like:
+A hobby project I'm working on to learn swift. Takes the source code from 
+[ColorizeSwift](https://github.com/mtynior/ColorizeSwift) and the API design from 
+[cli](https://github.com/r-lib/cli). The goal is to provide things like:
 
 ```
 print(AlertSuccess(text: "Updated database."))
