@@ -15,4 +15,4 @@ Run an example
 2. Run `sh build.sh` script to build sample application.
 3. Run `./example symbols` to view all available symbols.
 
-![](Assets/symbols_example.png)
+![](Assets/alert_example.png)
