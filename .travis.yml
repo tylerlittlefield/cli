@@ -3,7 +3,7 @@ language: swift
 osx_image: xcode11
 
 script:
-- set -o pipefail && xcodebuild -scheme 'cli' clean test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+- set -o pipefail && xcodebuild -scheme 'cli' clean test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES -enableCodeCoverage YES | xcpretty
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
