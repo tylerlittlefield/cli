@@ -6,7 +6,7 @@
 //
 
 // Print all available symbols.
-func printSymbols() {
+func PrintSymbols() {
     
     print("\nAvailable Symbols:\n")
     
@@ -84,23 +84,23 @@ func printSymbols() {
     
 }
 
-// Print all available styles.
-func printStyles() {
-    print("\nAvailable Styles:\n")
-}
-
-// Print all available colors.
-func printColors() {
-    print("\nAvailable Colors:\n")
+// Print all available alerts.
+func PrintAlerts() {
+    print("\nAvailable Alerts:\n")
+    
+    print(AlertSuccess())
+    print(AlertFailure())
+    print(AlertInfo())
+    print(AlertWarning())
+    print(AlertGeneric())
 }
 
 // Print example information, this is what the user will see if they do not
 // provide any arguments to the example executable.
-func printInfo() {
+func PrintInfo() {
     print("\nAvailable examples:\n")
     print("    1. symbols")
-    print("    2. styles")
-    print("    3. colors")
+    print("    2. alerts")
     print("\n")
 }
 
@@ -110,16 +110,15 @@ func printInfo() {
 // users input. If the input (even after converting to lowercase) doesn't
 // exist, we let them know and print the example info once more.
 if CommandLine.arguments.count != 2 {
-    printInfo()
+    PrintInfo()
 } else {
     let argument = CommandLine.arguments[1]
 
     switch (argument.lowercased()) {
-        case "symbols": printSymbols()
-        case "styles": printStyles()
-        case "colors": printColors()
+        case "symbols": PrintSymbols()
+        case "alerts": PrintAlerts()
         default:
             print("Unrecognized command `\(argument)`.")
-            printInfo()
+            PrintInfo()
     }
 }

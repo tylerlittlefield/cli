@@ -3,6 +3,7 @@ import Foundation
 public typealias TerminalSymbol = (String)
 
 public struct Symbols {
+    
     public static let tick:                 TerminalSymbol = ("\u{2714}")
     public static let cross:                TerminalSymbol = ("\u{2716}")
     public static let star:                 TerminalSymbol = ("\u{2605}")
@@ -74,4 +75,30 @@ public struct Symbols {
     public static let figure_dash:          TerminalSymbol = ("\u{2012}")
     public static let en_dash:              TerminalSymbol = ("\u{2013}")
     public static let em_dash:              TerminalSymbol = ("\u{2014}")
+    
+}
+    
+public func AlertSuccess(text: String = "Success!") -> String {
+    let alert = Symbols.tick + " " + text
+    return alert
+}
+
+public func AlertFailure(text: String = "Failure.") -> String {
+    let alert = Symbols.cross + " " + text
+    return alert
+}
+
+public func AlertInfo(text: String = "Info.") -> String {
+    let alert = Symbols.info + " " + text
+    return alert
+}
+
+public func AlertWarning(text: String = "Warning!") -> String {
+    let alert = Symbols.warning + " " + text
+    return alert
+}
+
+public func AlertGeneric(text: String = "Generic.") -> String {
+    let alert = Symbols.arrow_right + " " + text
+    return alert
 }
