@@ -86,6 +86,7 @@ func PrintSymbols() {
 
 // Print all available alerts.
 func PrintAlerts() {
+    
     print("\nAvailable Alerts:\n")
     
     print(AlertSuccess())
@@ -93,15 +94,17 @@ func PrintAlerts() {
     print(AlertInfo())
     print(AlertWarning())
     print(AlertGeneric())
+    
 }
 
 // Print example information, this is what the user will see if they do not
 // provide any arguments to the example executable.
 func PrintInfo() {
+    
     print("\nAvailable examples:\n")
     print("    1. symbols")
     print("    2. alerts")
-    print("\n")
+    
 }
 
 // As mentioned above, if the argument != 2 i.e. no argument was applied, then
@@ -110,8 +113,11 @@ func PrintInfo() {
 // users input. If the input (even after converting to lowercase) doesn't
 // exist, we let them know and print the example info once more.
 if CommandLine.arguments.count != 2 {
+    
     PrintInfo()
+    
 } else {
+    
     let argument = CommandLine.arguments[1]
 
     switch (argument.lowercased()) {
@@ -121,4 +127,5 @@ if CommandLine.arguments.count != 2 {
             print("Unrecognized command `\(argument)`.")
             PrintInfo()
     }
+    
 }

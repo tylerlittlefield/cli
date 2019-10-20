@@ -13,6 +13,6 @@ Run an example
 
 1. Open Terminal and go to the `Example` folder.
 2. Run `sh build.sh` script to build sample application.
-3. Run `./example symbols` to view all available symbols.
+3. Run `./example alerts` to view all available alerts.
 
 ![](Assets/alert_example.png)
