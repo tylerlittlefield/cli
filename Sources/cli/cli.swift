@@ -1,7 +1,7 @@
 import Foundation
 
-public typealias TerminalStyleCode = (String)
+public typealias TerminalSymbol = (String)
 
-public struct TerminalStyle {
-    public static let tick: TerminalStyleCode = ("\u{2714}")
+public struct Symbol {
+    public static let tick: TerminalSymbol = ("\u{2714}")
 }
