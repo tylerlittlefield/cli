@@ -102,8 +102,8 @@ func PrintAlerts() {
 func PrintInfo() {
     
     print("\nAvailable examples:\n")
-    print("    1. symbols")
-    print("    2. alerts")
+    print("1. symbols")
+    print("2. alerts")
     
 }
 

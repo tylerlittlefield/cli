@@ -12,7 +12,7 @@ A hobby project I'm working on to learn swift. The idea is to create a package s
 Run an example
 
 1. Open Terminal and go to the `Example` folder.
-2. Run `sh build.sh` script to build sample application.
+2. Run `sh build.sh` to build sample application.
 3. Run `./example alerts` to view all available alerts.
 
 ![](Assets/alert_example.png)
