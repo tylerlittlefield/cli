@@ -2,6 +2,7 @@
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/tylurp/cli.svg?branch=master)](https://travis-ci.org/tylurp/cli)
+[![codecov](https://codecov.io/gh/tyluRp/cli/branch/master/graph/badge.svg)](https://codecov.io/gh/tyluRp/cli)
 <!-- badges: end -->
 
 A hobby project I'm working on to learn swift. Takes the source code from 
