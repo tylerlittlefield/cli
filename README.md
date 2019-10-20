@@ -10,8 +10,6 @@ A hobby project I'm working on to learn swift. The idea is to create a package s
 useful CLI interfaces from [cli](https://github.com/r-lib/cli). This lets you do something like:
 
 ```
-import cli
-
 print(AlertSuccess(text: "Updated database."))
 print(AlertInfo(text: "Reopened database."))
 print(AlertWarning(text: "Cannot reach GitHub, using local database cache."))
