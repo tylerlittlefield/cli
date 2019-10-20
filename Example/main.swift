@@ -97,6 +97,18 @@ func PrintAlerts() {
     
 }
 
+func PrintReadme() {
+    
+    print("\nREADME example:\n")
+    
+    print(AlertSuccess(text: "Updated database."))
+    print(AlertInfo(text: "Reopened database."))
+    print(AlertWarning(text: "Cannot reach GitHub, using local database cache."))
+    print(AlertFailure(text: "Failed to connect to database."))
+    print(AlertGeneric(text: "A generic alert."))
+    
+}
+
 // Print example information, this is what the user will see if they do not
 // provide any arguments to the example executable.
 func PrintInfo() {
@@ -104,6 +116,7 @@ func PrintInfo() {
     print("\nAvailable examples:\n")
     print("1. symbols")
     print("2. alerts")
+    print("3. readme")
     
 }
 
@@ -123,6 +136,7 @@ if CommandLine.arguments.count != 2 {
     switch (argument.lowercased()) {
         case "symbols": PrintSymbols()
         case "alerts": PrintAlerts()
+        case "readme": PrintReadme()
         default:
             print("Unrecognized command `\(argument)`.")
             PrintInfo()
