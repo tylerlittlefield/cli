@@ -2,7 +2,7 @@ import Foundation
 
 public typealias TerminalSymbol = (String)
 
-public struct Symbol {
+public struct Symbols {
     public static let tick:                 TerminalSymbol = ("\u{2714}")
     public static let cross:                TerminalSymbol = ("\u{2716}")
     public static let star:                 TerminalSymbol = ("\u{2605}")
