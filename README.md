@@ -16,6 +16,17 @@ print(AlertFailure("Failed to connect to database."))
 print(AlertGeneric("A generic alert."))
 ```
 
+Where `AlertSuccess()` is:
+
+```
+public func AlertSuccess(_ text: String = "Success") -> String {
+    let alert = Symbols.tick.green() + " " + text
+    return alert
+}
+```
+
+Note the `.green()` which comes from ColorizeSwift.
+
 ## Example
 
 Run an example
