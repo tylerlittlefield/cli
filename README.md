@@ -16,7 +16,7 @@ print(AlertInfo("Reopened database."))
 print(AlertWarning("Cannot reach GitHub, using local database cache."))
 print(AlertFailure("Failed to connect to database."))
 print(AlertGeneric("A generic alert."))
-print(UnorderedList(["Item 1", "Item 2", "Item 3"]))
+print(UnorderedList("Item 1", "Item 2", "Item 3"))
 ```
 
 Where `AlertSuccess()` is:
