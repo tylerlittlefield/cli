@@ -94,15 +94,21 @@ func PrintAlerts() {
 }
 
 func PrintReadme() {
-    print("\nAlerts:")
+    print("\nAlerts:".italic())
     print(AlertSuccess("Updated database."))
     print(AlertInfo("Reopened database."))
     print(AlertWarning("Cannot reach GitHub, using local database cache."))
     print(AlertFailure("Failed to connect to database."))
     print(AlertGeneric("A generic alert."))
-    print("\nLists:")
+    
+    print("\nLists:".italic())
     print(UnorderedList("Item 1", "Item 2", "Item 3"))
     print(OrderedList("Item 1", "Item 2", "Item 3"))
+    
+    print("\nSymbols:".italic())
+    print(Symbols.tick)
+    print(Symbols.cross)
+    print(Symbols.star)
     
 }
 

@@ -14,7 +14,7 @@ unicode characters, headings and more. Currently contains:
 2. Alerts: `AlertSuccess()`, `AlertWarning()`, etc.
 3. Lists: `OrderedList()` and  `UnorderedList()`
 4. Everything from ColorizeSwift, I've copied the source code to be used in this project so we 
-have access to all it's awesome features
+have access to all it's awesome features (colored text, styles and more)
 
 ```swift
 // Alerts
@@ -27,13 +27,16 @@ print(AlertGeneric("A generic alert."))
 // Lists
 print(UnorderedList("Item 1", "Item 2", "Item 3"))
 print(OrderedList("Item 1", "Item 2", "Item 3"))
-```
 
-Note the `.green()` which comes from ColorizeSwift.
+// Symbols
+print(Symbols.tick)
+print(Symbols.cross)
+print(Symbols.star)
+```
 
 ## Example
 
-Run an example
+There are a couple examples you can demo:
 
 1. Open Terminal and go to the `Example` folder.
 2. Run `sh build.sh` to build the example application.
