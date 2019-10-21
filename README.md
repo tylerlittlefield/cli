@@ -1,3 +1,5 @@
+![](Assets/cli.png)
+
 # cli
 
 <!-- badges: start -->
