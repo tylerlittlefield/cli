@@ -11,12 +11,16 @@ A hobby project I'm working on to learn swift. Takes the source code from
 unicode characters, headings and more:
 
 ```
+// Alerts
 print(AlertSuccess("Updated database."))
 print(AlertInfo("Reopened database."))
 print(AlertWarning("Cannot reach GitHub, using local database cache."))
 print(AlertFailure("Failed to connect to database."))
 print(AlertGeneric("A generic alert."))
+
+// Lists
 print(UnorderedList("Item 1", "Item 2", "Item 3"))
+print(OrderedList("Item 1", "Item 2", "Item 3"))
 ```
 
 Where `AlertSuccess()` is:
