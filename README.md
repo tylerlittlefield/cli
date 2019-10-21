@@ -10,7 +10,7 @@ A hobby project I'm working on to learn swift. Takes the source code from
 [cli](https://github.com/r-lib/cli). The goal is to (eventually) provide things like alerts, lists, rules, 
 unicode characters, headings and more:
 
-```
+```swift
 // Alerts
 print(AlertSuccess("Updated database."))
 print(AlertInfo("Reopened database."))
@@ -25,7 +25,7 @@ print(OrderedList("Item 1", "Item 2", "Item 3"))
 
 Where `AlertSuccess()` is:
 
-```
+```swift
 public func AlertSuccess(_ text: String = "Success") -> String {
     let alert = Symbols.tick.green() + " " + text
     return alert
