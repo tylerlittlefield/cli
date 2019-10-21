@@ -627,3 +627,11 @@ func UnorderedList(_ items: String...) -> String {
     }
     return collection
 }
+
+func OrderedList(_ items: String...) -> String {
+    var collection: String = ""
+    for (index, value) in items.enumerated() {
+        collection += "\(index + 1). \(value)\n"
+    }
+    return collection
+}

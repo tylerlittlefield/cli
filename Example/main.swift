@@ -100,8 +100,9 @@ func PrintReadme() {
     print(AlertWarning("Cannot reach GitHub, using local database cache."))
     print(AlertFailure("Failed to connect to database."))
     print(AlertGeneric("A generic alert."))
-    print("\nList:")
+    print("\nLists:")
     print(UnorderedList("Item 1", "Item 2", "Item 3"))
+    print(OrderedList("Item 1", "Item 2", "Item 3"))
     
 }
 
@@ -110,6 +111,8 @@ func PrintLists() {
     
     print("UnorderedList")
     print(UnorderedList("Item 1", "Item 2", "Item 3"))
+    print("OrderedList")
+    print(OrderedList("Item 1", "Item 2", "Item 3"))
 }
 
 // Print example information, this is what the user will see if they do not
