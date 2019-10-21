@@ -1,11 +1,13 @@
 ![](Assets/cli.png)
 
-# cli
-
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/tylurp/cli.svg?branch=master)](https://travis-ci.org/tylurp/cli)
-[![codecov](https://codecov.io/gh/tyluRp/cli/branch/master/graph/badge.svg)](https://codecov.io/gh/tyluRp/cli)
+<p align="center">
+  <a href="https://travis-ci.org/tylurp/cli"><img src="https://travis-ci.org/tylurp/cli.svg?branch=master" /></a>
+  <a href="https://codecov.io/gh/tyluRp/cli"><img src="https://codecov.io/gh/tyluRp/cli/branch/master/graph/badge.svg" /></a>
+</p>
 <!-- badges: end -->
+
+#
 
 A hobby project I'm working on to learn swift. Takes the source code from 
 [ColorizeSwift](https://github.com/mtynior/ColorizeSwift) and the API design from 
