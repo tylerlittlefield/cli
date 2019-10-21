@@ -8,7 +8,13 @@
 A hobby project I'm working on to learn swift. Takes the source code from 
 [ColorizeSwift](https://github.com/mtynior/ColorizeSwift) and the API design from 
 [cli](https://github.com/r-lib/cli). The goal is to (eventually) provide things like alerts, lists, rules, 
-unicode characters, headings and more:
+unicode characters, headings and more. Currently contains:
+
+1. Unicode symbols: `Symbols.tick`, `Symbols.bullet`, etc.
+2. Alerts: `AlertSuccess()`, `AlertWarning()`, etc.
+3. Lists: `OrderedList()` and  `UnorderedList()`
+4. Everything from ColorizeSwift, I've copied the source code to be used in this project so we 
+have access to all it's awesome features
 
 ```swift
 // Alerts
@@ -21,15 +27,6 @@ print(AlertGeneric("A generic alert."))
 // Lists
 print(UnorderedList("Item 1", "Item 2", "Item 3"))
 print(OrderedList("Item 1", "Item 2", "Item 3"))
-```
-
-Where `AlertSuccess()` is:
-
-```swift
-public func AlertSuccess(_ text: String = "Success") -> String {
-    let alert = Symbols.tick.green() + " " + text
-    return alert
-}
 ```
 
 Note the `.green()` which comes from ColorizeSwift.
