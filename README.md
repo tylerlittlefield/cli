@@ -4,6 +4,7 @@
 <p align="center">
   <a href="https://travis-ci.org/tylurp/cli"><img src="https://travis-ci.org/tylurp/cli.svg?branch=master" /></a>
   <a href="https://codecov.io/gh/tyluRp/cli"><img src="https://codecov.io/gh/tyluRp/cli/branch/master/graph/badge.svg" /></a>
+  <a href="https://github.com/tyluRp/cli/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
 </p>
 <!-- badges: end -->
 
