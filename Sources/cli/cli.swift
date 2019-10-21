@@ -618,3 +618,13 @@ public func AlertGeneric(_ text: String = "Generic") -> String {
     let alert = Symbols.arrow_right + " " + text
     return alert
 }
+
+// List functions.
+public func UnorderedList(_ array: [String]) -> String {
+    var items = "\(Symbols.bullet) \(array[0])"
+    for i in array[1..<array.count] {
+        let i = "\n\(Symbols.bullet) \(i)"
+        items += i
+    }
+    return items
+}

@@ -7,7 +7,6 @@
 
 // Print all available symbols.
 func PrintSymbols() {
-    
     print("\nAvailable Symbols:\n")
     
     print(Symbols.tick)
@@ -81,12 +80,10 @@ func PrintSymbols() {
     print(Symbols.figure_dash)
     print(Symbols.en_dash)
     print(Symbols.em_dash)
-    
 }
 
 // Print all available alerts.
 func PrintAlerts() {
-    
     print("\nAvailable Alerts:\n")
     
     print(AlertSuccess())
@@ -94,11 +91,9 @@ func PrintAlerts() {
     print(AlertInfo())
     print(AlertWarning())
     print(AlertGeneric())
-    
 }
 
 func PrintReadme() {
-    
     print("\nREADME example:\n")
     
     print(AlertSuccess("Updated database."))
@@ -109,15 +104,22 @@ func PrintReadme() {
     
 }
 
+func PrintLists() {
+    print("\nAll available lists.\n")
+    
+    print("UnorderedList")
+    print(UnorderedList(["Item 1", "Item 2", "Item 3"]))
+}
+
 // Print example information, this is what the user will see if they do not
 // provide any arguments to the example executable.
 func PrintInfo() {
-    
     print("\nAvailable examples:\n")
+    
     print("1. symbols")
     print("2. alerts")
     print("3. readme")
-    
+    print("4. lists")
 }
 
 // As mentioned above, if the argument != 2 i.e. no argument was applied, then
@@ -126,20 +128,17 @@ func PrintInfo() {
 // users input. If the input (even after converting to lowercase) doesn't
 // exist, we let them know and print the example info once more.
 if CommandLine.arguments.count != 2 {
-    
     PrintInfo()
-    
 } else {
-    
     let argument = CommandLine.arguments[1]
 
     switch (argument.lowercased()) {
         case "symbols": PrintSymbols()
         case "alerts": PrintAlerts()
         case "readme": PrintReadme()
+        case "lists": PrintLists()
         default:
             print("Unrecognized command `\(argument)`.")
             PrintInfo()
     }
-    
 }
