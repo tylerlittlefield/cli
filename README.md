@@ -12,8 +12,9 @@
 
 A hobby project I'm working on to learn swift. Takes the source code from 
 [ColorizeSwift](https://github.com/mtynior/ColorizeSwift) and the API design from 
-[cli](https://github.com/r-lib/cli). The goal is to (eventually) provide things like alerts, lists, rules, 
-unicode characters, headings and more. Currently contains:
+[cli](https://github.com/r-lib/cli). The goal is to (eventually) provide semantic elements like 
+alerts, lists, rules, unicode characters, headings and more to build beautiful CLIs easily. 
+Currently contains:
 
 1. Unicode symbols: `Symbols.tick`, `Symbols.bullet`, etc.
 2. Alerts: `AlertSuccess()`, `AlertWarning()`, etc.
