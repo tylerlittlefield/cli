@@ -620,7 +620,7 @@ public func AlertGeneric(_ text: String = "Generic") -> String {
 }
 
 // List functions.
-func UnorderedList(_ items: String...) -> String {
+public func UnorderedList(_ items: String...) -> String {
     var collection: String = ""
     for item in items {
         collection += "\(Symbols.bullet) \(item)\n"
@@ -628,7 +628,7 @@ func UnorderedList(_ items: String...) -> String {
     return collection
 }
 
-func OrderedList(_ items: String...) -> String {
+public func OrderedList(_ items: String...) -> String {
     var collection: String = ""
     for (index, value) in items.enumerated() {
         collection += "\(index + 1). \(value)\n"
