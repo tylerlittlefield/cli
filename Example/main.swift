@@ -105,6 +105,9 @@ func PrintReadme() {
     print(UnorderedList("Item 1", "Item 2", "Item 3"))
     print(OrderedList("Item 1", "Item 2", "Item 3"))
     
+    print("\nRules:".italic())
+    print(Rule("Results"))
+    
     print("\nSymbols:".italic())
     print(Symbols.tick)
     print(Symbols.cross)
@@ -121,6 +124,12 @@ func PrintLists() {
     print(OrderedList("Item 1", "Item 2", "Item 3"))
 }
 
+func PrintRules() {
+    print("\nRules\n")
+    
+    print(Rule("Results"))
+}
+
 // Print example information, this is what the user will see if they do not
 // provide any arguments to the example executable.
 func PrintInfo() {
@@ -130,6 +139,7 @@ func PrintInfo() {
     print("2. alerts")
     print("3. readme")
     print("4. lists")
+    print("5. rules")
 }
 
 // As mentioned above, if the argument != 2 i.e. no argument was applied, then
@@ -147,6 +157,7 @@ if CommandLine.arguments.count != 2 {
         case "alerts": PrintAlerts()
         case "readme": PrintReadme()
         case "lists": PrintLists()
+        case "rules": PrintRules()
         default:
             print("Unrecognized command `\(argument)`.")
             PrintInfo()

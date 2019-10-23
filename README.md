@@ -34,6 +34,9 @@ print(AlertGeneric("A generic alert."))
 print(UnorderedList("Item 1", "Item 2", "Item 3"))
 print(OrderedList("Item 1", "Item 2", "Item 3"))
 
+// Rules
+print(Rule("Results"))
+
 // Symbols
 print(Symbols.tick)
 print(Symbols.cross)

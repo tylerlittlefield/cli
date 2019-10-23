@@ -1,4 +1,5 @@
 import Foundation
+import Darwin
 
 // Symbol typealias.
 public typealias TerminalSymbol = (String)
@@ -634,4 +635,21 @@ public func OrderedList(_ items: String...) -> String {
         collection += "\(index + 1). \(value)\n"
     }
     return collection
+}
+
+// Terminal dimensions.
+func WindowDimensions() -> (Int, Int) {
+    var w = winsize()
+     _ = ioctl(STDOUT_FILENO, UInt(TIOCGWINSZ), &w);
+     return (Int(w.ws_col), Int(w.ws_row))
+}
+
+// Rule functions.
+public func Rule(_ text: String? = nil) -> String {
+    let x = text ?? ""
+    
+    let w = WindowDimensions()
+    let rule = String(repeating: Symbols.line, count: w.0 - x.count - 4)
+    let final = Symbols.line + Symbols.line + " " + x + " " + rule
+    return(final)
 }
