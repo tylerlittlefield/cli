@@ -19,7 +19,8 @@ Currently contains:
 1. Unicode symbols: `Symbols.tick`, `Symbols.bullet`, etc.
 2. Alerts: `AlertSuccess()`, `AlertWarning()`, etc.
 3. Lists: `OrderedList()` and  `UnorderedList()`
-4. Everything from ColorizeSwift, I've copied the source code to be used in this project so we 
+4. Rules:  `Rule()`
+5. Everything from ColorizeSwift, I've copied the source code to be used in this project so we 
 have access to all it's awesome features (colored text, styles and more)
 
 ```swift
