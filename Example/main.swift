@@ -107,6 +107,7 @@ func PrintReadme() {
     
     print("\nRules:".italic())
     print(Rule("Results"))
+    print(Rule())
     
     print("\nSymbols:".italic())
     print(Symbols.tick)

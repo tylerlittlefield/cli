@@ -645,11 +645,18 @@ func WindowDimensions() -> (Int, Int) {
 }
 
 // Rule functions.
-public func Rule(_ text: String? = nil) -> String {
-    let x = text ?? ""
-    
+public func Rule(_ text: String = Symbols.line, _ symbol: String = Symbols.line) -> String {
     let w = WindowDimensions()
-    let rule = String(repeating: Symbols.line, count: w.0 - x.count - 4)
-    let final = Symbols.line + Symbols.line + " " + x + " " + rule
-    return(final)
+    let final: String
+
+    switch text {
+    case Symbols.line:
+        final = String(repeating: symbol, count: w.0)
+    default:
+        let rule = String(repeating: symbol, count: w.0 - text.count - 4)
+        final = symbol + symbol + " " + text + " " + rule
+    }
+
+    return final
 }
+
